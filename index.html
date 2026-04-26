@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Happy Birthday</title>
+</head>
+
+<body>
+    <header>
+        <h1>[🎉Happy Birthday🎉]</h1>
+    </header>
+    <main>
+        <!-- Dark overlay - appears behind popups -->
+        <div id="overlay" class="overlay"></div>
+        
+        <!-- Letter button - click to open the letter -->
+        <button id="letter"><img id="letter-image" src="media/letter_png.png" alt="letter image"></button>
+        
+        <!-- Letter content - text and images (hidden until button is clicked) -->
+        <div id="contents">
+            <!-- Text section - EDIT: -->
+            <div class="text active">
+                <h2 class="title">[Title here]</h2>
+                <p>[Your text here]</p>
+                <h3 class="signature">[Signature]</h3>
+            </div>
+            <!-- Images container - images are added via script.js -->
+            <div class="images">
+            </div>
+            <!-- Navigation arrows -->
+            <div class="content-nav">
+                <button class="previous"><img class="arrow" src="media/next.png" alt="button previous"></button>
+                <button class="next"><img class="arrow" src="media/next.png" alt="button next"></button>
+            </div>
+        </div>
+        
+        <!-- Gift button - appears after letter is closed -->
+        <div id="gift">
+            <button id="gift-open-button">
+                <img id="gift-image" src="media/gift_png.png" alt="gift image">
+            </button>
+        </div>
+        <!-- Gift content - appears when gift is opened -->
+        <div id="gift-content">
+            <img id="gift-inside" src="media/gift/placeholder.png" alt="gift inside">
+            <a id="download-link" href="media/gift/placeholder.png" download>
+                <button id="download-button">Download</button>
+            </a>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
