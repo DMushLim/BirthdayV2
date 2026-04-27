@@ -45,6 +45,24 @@ document.addEventListener('DOMContentLoaded', () => {
     let isLetterOpen = false;
     let isGiftOpen = false;
 
+    // ========== PRELOAD IMAGES ==========
+
+    // Preload gift image
+    function preloadImages() {
+        // Preload gift image
+        const giftImg = new Image();
+        giftImg.src = giftImageSrc;
+        
+        // Preload letter images
+        letterImages.forEach(imagePath => {
+            const img = new Image();
+            img.src = imagePath;
+        });
+    }
+
+    // Start preloading images immediately
+    preloadImages();
+
     // ========== LETTER FUNCTIONS ==========
 
     // Open the letter popup
